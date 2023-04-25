@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers Gallery</title>
+</head>
+<body>
+    <section>
+        <img src="a.jpg">
+        <img src="b.jpg">
+        <img src="c.jpg">
+        <img src="d.jpg">
+        <img src="e.jpg">
+        <img src="f.jpg">
+    </section>
+
+    <style>
+        body {
+            margin-top: 2em;
+            background-color: #000;
+        }
+        section {
+            margin: 0 auto;
+            display: flex;
+            width: 600px;
+            height: 600px;
+        }
+
+        section img {
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+            transition: .5s ease;
+        }
+        section img:hover {
+            cursor: crosshair;
+            width: 300px;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+    </style>
+</body>
+</html>
